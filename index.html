@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/bus-icon.png" type="image/x-icon">
+  <!-- tailwind css -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Externel css -->
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Tiket dalal</title>
+</head>
+<body>
+  <header>
+    <!-- nav var section -->
+    <nav class="mx-36 pb-8">
+      <div class="navbar  bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+    </nav>
+    <!-- banner section -->
+    <section class="mx-36">
+      <div class="hero min-h-screen rounded-3xl" style="background-image: url(images/banner.png);">
+        <div class="hero-overlay bg-opacity-0"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <p class="mb-5">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+            <a class="btn btn-primary" href="#tiket-collet-section">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- card section -->
+    <section class="flex justify-center -mt-12 gap-5 max-w-6xl items-center mx-auto">
+      <div
+        class="stat flex flex-row justify-center bg-white rounded-2xl max-w-[308px] max-h-[138px] border-b-4 border-[#1DD100]">
+        <div class="stat-figure text-primary">
+          <img src="/images/people.png" alt="" />
+        </div>
+        <div class="">
+          <div class="stat-value font-bold">500K+</div>
+          <div class="stat-desc">Registered Users</div>
+        </div>
+      </div>
+      <div
+        class="stat flex flex-row justify-center bg-white rounded-2xl max-w-[308px] max-h-[138px] border-b-4 border-[#1DD100]">
+        <div class="stat-figure text-primary">
+          <img src="/images/people.png" alt="" />
+        </div>
+        <div class="">
+          <div class="stat-value font-bold">500K+</div>
+          <div class="stat-desc">Registered Users</div>
+        </div>
+      </div>
+      <div
+        class="stat flex flex-row justify-center bg-white rounded-2xl max-w-[308px] max-h-[138px] border-b-4 border-[#1DD100]">
+        <div class="stat-figure text-primary">
+          <img src="/images/people.png" alt="" />
+        </div>
+        <div class="">
+          <div class="stat-value font-bold">500K+</div>
+          <div class="stat-desc">Registered Users</div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- best offer section -->
+    <section class="mx-10 mt-6 flex flex-col items-center">
+      <h1 class="text-6xl py-10">Best offers for you</h1>
+      <div class="flex gap-20">
+        <div class="flex bg-[#FFBF0F] rounded-3xl">
+          <div class="flex flex-col justify-center p-9">
+            <h1 class="text-4xl font-extrabold">15% OFF</h1>
+            <p>on your next purchase</p>
+            <p>use by January 2024</p>
+          </div>
+          <img src="images/cupon-devider.png" alt="">
+          <div class="flex flex-col justify-center p-7">
+            <h1 class="text-3xl font-bold">NEW15</h1>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+        <div class="flex bg-[#FFBF0F] rounded-3xl">
+          <div class="flex bg-[#FFBF0F] rounded-3xl">
+            <div class="flex flex-col justify-center px-11">
+              <h1 class="text-4xl font-extrabold">20% OFF</h1>
+              <p>on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="">
+            <div class="flex flex-col justify-center p-7">
+              <h1 class="text-3xl font-bold">Couple 20</h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-outline text-lime-600 my-11">see more</button>
+    </section>
+    <!-- tiket booking sec -->
+    <section id="tiket-collet-section" class="rounded-t-[90px] border-t-4 border-t-lime-600 bg-[#F7F8F8]">
+      <!-- tiket info part -->
+      <div>
+        <div class="text-center ">
+          <h1 class="text-6xl pt-36 pb-10 font-semibold">Sajjad Poribohon</h1>
+          <p class="text-2xl pb-20">apnar vromon anondoghono korar chestay <br> amra achi apnr pase</p>
+        </div>
+      </div>
+      <div class="flex rounded-3xl  mx-36 bg-white ">
+        <div class="flex flex-1 flex-col justify-center p-10">
+          <div class="flex justify-between">
+            <div class="flex">
+              <img src="images/bus-logo.png" alt="">
+              <h1 class=" pl-2 text-3xl font-bold">Greenline Paribahan <br><span class="text-lg font-semibold text-zinc-700">Coach-009-WEB ! AC_Business</span></h1>
+            </div>
+            <p class="flex btn"><img src="images/seat-green.png" alt=""><span id="show-seat-left">40</span> Seats left</p>
+          </div>
+          <div class="divide-y divide-dashed rounded-2xl bg-[#F7F8F8] p-7 mt-8">
+            <div class="flex justify-between p-4">
+              <h1>Route</h1>
+              <h1>Dhaka - Sylhet</h1>
+            </div>
+            <div class="flex justify-between p-4">
+              <h1>Departure Time</h1>
+              <h1>9:00 PM</h1>
+            </div>
+            <div class="p-4 flex justify-between">
+              <p class="btn">Boarding Point - Laxmipur</p>
+              <p class="btn">Boarding Point - Laxmipur</p>
+              <p class="btn">Boarding Point - Laxmipur</p>
+            </div>
+          </div>
+        </div>
+        <img src="images/info-devider.png" alt="">
+        <div class="flex flex-col items-center justify-center w-96 p-10">
+          <img src="images/fare.png" alt="">
+          <h1 class="text-5xl font-semibold">550 Taka <br><span class="text-3xl text-zinc-500">Per Seat</span></h1>
+        </div>
+      </div>
+       <!--  booking seat section -->
+    <div class="  mx-36 mt-10 flex justify-around divide-x divide-dashed rounded-2xl bg-white">
+
+      <div class="flex flex-col  gap-6 p-10">
+          <div class="flex flex-col">
+              <div class="py-5">
+                  <h1 class="text-2xl font-semibold ">select your seat</h1>
+              </div>
+              <div class="flex justify-between py-3 border-y-2 border-dashed">
+                  <p class="flex btn"><img src="images/seat-green.png" alt=""><span></span> Available</p>
+                  <p class="flex btn"><img src="images/seat-green-filled.png" alt=""><span></span>Selected</p>
+              </div>
+          </div>
+          <div class="flex justify-end"><button class="btn"><img src="images/tabler-icon-steering-wheel.svg" alt="">
+              </button></div>
+          <div class="flex justify-between gap-20 ">
+              <div class="flex gap-8 items-center">
+                  <h1 class=" px-3 w-12 text-2xl">A</h1>
+                  <button onclick="bookingSeat(this.id)" id="A1" class="btn w-[110px] px-6 text-2xl">A1</button>
+                  <button onclick="bookingSeat(this.id)" id="A2" class="btn w-[110px] px-6 text-2xl">A2</button>
+              </div>
+              <div class="flex gap-8 items-center">
+                  <button onclick="bookingSeat(this.id)" id="A3" class="btn w-[110px] px-6 text-2xl">A3</button>
+                  <button onclick="bookingSeat(this.id)" id="A4" class="btn w-[110px] px-6 text-2xl">A4</button>
+              </div>
+          </div>
+          <div class="flex justify-between gap-20 ">
+              <div class="flex gap-8 items-center">
+                  <h1 class=" px-3 w-12 text-2xl">B</h1>
+                  <button onclick="bookingSeat(this.id)" id="B1" class="btn w-[110px] px-6 text-2xl">B1</button>
+                  <button onclick="bookingSeat(this.id)" id="B2" class="btn w-[110px] px-6 text-2xl">B2</button>
+              </div>
+              <div class="flex gap-8 items-center">
+                  <button onclick="bookingSeat(this.id)" id="B3" class="btn w-[110px] px-6 text-2xl">B3</button>
+                  <button onclick="bookingSeat(this.id)" id="B4" class="btn w-[110px] px-6 text-2xl">B4</button>
+              </div>
+          </div>
+          <div class="flex justify-between gap-20 ">
+              <div class="flex gap-8 items-center">
+                  <h1 class="w-12 px-3 text-2xl">C</h1>
+                  <button onclick="bookingSeat(this.id)" id="C1"  class="btn w-[110px] px-6 text-2xl">C1</button>
+                  <button onclick="bookingSeat(this.id)" id="C3"  class="btn w-[110px] px-6 text-2xl">C2</button>
+              </div>
+              <div class="flex gap-8 items-center">
+                  <button class="btn w-[110px] px-6 text-2xl">C3</button>
+                  <button class="btn w-[110px] px-6 text-2xl">C4</button>
+              </div>
+          </div>
+          <div class="flex justify-between gap-20 ">
+              <div class="flex gap-8 items-center">
+                  <h1 class="w-12 px-3 text-2xl">D</h1>
+                  <button class="btn w-[110px] px-6 text-2xl">D1</button>
+                  <button class="btn w-[110px] px-6 text-2xl">D2</button>
+              </div>
+              <div class="flex gap-8 items-center">
+                  <button class="btn w-[110px] px-6 text-2xl">D3</button>
+                  <button class="btn w-[110px] px-6 text-2xl">D4</button>
+              </div>
+          </div>
+          <div class="flex justify-between gap-20 ">
+              <div class="flex gap-8 items-center">
+                  <h1 class="w-12 px-3 text-2xl">E</h1>
+                  <button class="btn w-[110px] px-6 text-2xl">E1</button>
+                  <button class="btn w-[110px] px-6 text-2xl">E2</button>
+              </div>
+              <div class="flex gap-8 items-center">
+                  <button class="btn w-[110px] px-6 text-2xl">E3</button>
+                  <button class="btn w-[110px] px-6 text-2xl">E4</button>
+              </div>
+          </div>
+          <div class="flex justify-between gap-20 ">
+              <div class="flex gap-8 items-center">
+                  <h1 class="w-12 px-3 text-2xl">F</h1>
+                  <button class="btn w-[110px] px-6 text-2xl">F1</button>
+                  <button class="btn w-[110px] px-6 text-2xl">F2</button>
+              </div>
+              <div class="flex gap-8 items-center">
+                  <button class="btn w-[110px] px-6 text-2xl">F3</button>
+                  <button class="btn w-[110px] px-6 text-2xl">F4</button>
+              </div>
+          </div>
+          <div class="flex justify-between gap-20 ">
+              <div class="flex gap-8 items-center">
+                  <h1 class="w-12 px-3 text-2xl">G</h1>
+                  <button class="btn w-[110px] px-6 text-2xl">G1</button>
+                  <button class="btn w-[110px] px-6 text-2xl">G2</button>
+              </div>
+              <div class="flex gap-8 items-center">
+                  <button class="btn w-[110px] px-6 text-2xl">G3</button>
+                  <button class="btn w-[110px] px-6 text-2xl">G4</button>
+              </div>
+          </div>
+          <div class="flex justify-between gap-20 ">
+              <div class="flex gap-8 items-center">
+                  <h1 class="w-12 px-3 text-2xl">H</h1>
+                  <button class="btn w-[110px] px-6 text-2xl">H1</button>
+                  <button class="btn w-[110px] px-6 text-2xl">H2</button>
+              </div>
+              <div class="flex gap-8 items-center">
+                  <button class="btn w-[110px] px-6 text-2xl">H3</button>
+                  <button class="btn w-[110px] px-6 text-2xl">H4</button>
+              </div>
+          </div>
+          <div class="flex justify-between gap-20 ">
+              <div class="flex gap-8 items-center">
+                  <h1 class="w-12 px-3  text-2xl">I</h1>
+                  <button class="btn w-[110px] px-6 text-2xl">I1</button>
+                  <button class="btn w-[110px] px-6 text-2xl">I2</button>
+              </div>
+              <div class="flex gap-8 items-center">
+                  <button class="btn w-[110px] px-6 text-2xl">I3</button>
+                  <button class="btn w-[110px] px-6 text-2xl">I4</button>
+              </div>
+          </div>
+          <div class="flex justify-between gap-20 ">
+              <div class="flex justify-between gap-8 items-center">
+                  <h1 class="w-12 px-3 text-2xl">J</h1>
+                  <button class="btn w-[110px] px-6 text-2xl">J1</button>
+                  <button class="btn w-[110px] px-6 text-2xl">J2</button>
+              </div>
+              <div class="flex gap-8 ">
+                  <button class="btn w-[110px] px-6 text-2xl">J3</button>
+                  <button class="btn w-[110px] px-6 text-2xl">J4</button>
+              </div>
+          </div>
+
+      </div>
+      <div class="p-12">
+          <div class="border-b-2 divide-dotted">
+              <h1 class="text-2xl font-semibold border-b-2 border-dotted my-9 ">select your seat</h1>
+              <div class="bg-[#F7F8F8] rounded-2xl p-4">
+                  <div class="flex justify-between border-b-2 border-dotted ">
+                      <h1 class="text-xl font-bold ">Seat <span id="selected-seat"
+                              class="bg-lime-600 text-white font-semibold px-2  rounded-lg">0</span></h1>
+                      <h1 class=" text-xl font-bold">Class</h1>
+                      <h1 class=" text-xl font-bold ">Price</h1>
+                  </div>
+                  <div class="flex justify-between">
+                      <h1 class="text-2xl hidden ">A1</h1>
+                      <h1 class=" text-2xl hidden ">Class</h1>
+                      <h1 class=" text-2xl hidden ">Price</h1>
+                  </div>
+                  <div class="flex justify-between my-4 ">
+                      <h1 class=" font-semibold">Total Price</h1>
+                      <h1 class="font-semibold">BDT: <span id="tolat-price">550</span></h1>
+                  </div>
+                  <div class=" bg-white p-3 m-3 rounded-xl">
+                      <input id="discund-by-cuppon" class="input border-0" placeholder="Have any cuppon" />
+                      <button onclick="showDiscuntPrice()" id="cuppon-input" class="btn bg-[#1DD100] rounded-xl" disabled>Apply</button>
+                  </div>
+                  <div class="flex justify-between ">
+                      <h1 class="font-semibold">Grand Total</h1>
+                      <h1 class="font-semibold">BDT : <span id="grand-total">000</span></h1>
+                  </div>
+              </div>
+          </div>
+          <div class="my-8">
+              <div>
+                  <label class="form-control w-full">
+                      <div class="label">
+                          <span class="label-text font-semibold text-2xl">Passenger Name*</span>
+                      </div>
+                      <input type="text" placeholder="Enter your name " class="input input-bordered w-full" />
+                  </label>
+                  <label class="form-control w-full">
+                      <div class="label">
+                          <span class="label-text font-semibold text-2xl">Phone Number*</span>
+                      </div>
+                      <input type="number" placeholder="Enter your phone number"
+                          class="input input-bordered w-full" />
+                  </label>
+                  <label class="form-control w-full">
+                      <div class="label">
+                          <span class="label-text font-semibold text-2xl">Email ID</span>
+                      </div>
+                      <input type="text" placeholder="Enter your email id" class="input input-bordered w-full " />
+                  </label>
+              </div>
+              <button class="btn bg-[#1DD100] w-full text-2xl mt-9" disabled>Next</button>
+          </div>
+      </div>
+  </div>
+  
+    </section>
+  </main>
+  <!-- footer section -->
+  <footer class="footer bg-black text-neutral-content p-10">
+    <aside>
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        class="fill-current">
+        <path
+          d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+      </svg>
+      <p>
+        ACME Industries Ltd.
+        <br />
+        Providing reliable tech since 1992
+      </p>
+    </aside>
+    <nav>
+      <h6 class="footer-title">Social</h6>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+          </svg>
+        </a>
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+          </svg>
+        </a>
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </footer>
+  <script src="script/assignment-5.js"></script>
+  <script src="script/utility.js"></script>
+</body>
+
+</html>
